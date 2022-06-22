@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Adventure Maker</title>
+</head>
+<body>
+  <div id="root"></div>
+
+ 
+    
+    <div style="display: flex; justify-content: center;"><button id="content-btn">Click Me!</button></div>
+
+  <div style="display: flex; justify-content: center;">
+    <textarea id="ta" onkeyup="checkScroll(this)" style="height:4em; width: 80%; overflow:auto; resize: none;" placeholder="You can write the story here."></textarea>
+    
+      <script>
+      function checkScroll(obj) {
+        if(obj.clientHeight < obj.scrollHeight) {
+          obj.style.height = (parseInt(obj.style.height)+1) + 'em';
+        }
+      }
+      </script>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
