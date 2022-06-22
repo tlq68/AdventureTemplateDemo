@@ -10,7 +10,7 @@
   font-size: large;
   display: block;
   clear: both;
-  white-space: pre;
+  white-space: nowrap;
 }
 
 button {
